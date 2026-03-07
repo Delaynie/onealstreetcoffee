@@ -1,0 +1,828 @@
+/* Universale styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(25,25,25);
+}
+
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
+.left-side-p {
+z-index: 9;
+height: 100vh; 
+padding:32px; 
+color: #e5d7c6;
+display:flex; 
+align-items: flex-end;
+justify-content: center;
+font-family: "Playfair Display", sans-serif;
+font-size: 14px;
+}
+
+/* Header, Nav, and Side Image styling Section */
+
+header {
+    background-color: rgb(25,25,25);
+    /*#936639; - good tan
+    /* #7F4F24; - meh, brown
+    /*#582F0E; -brown too dark but might be good for a different background section
+    #3F4B3B; - dark green
+     /* #4B296B; - purple, maybe halloween?
+      /*#416165; - pretty teal
+       /* #723D46; - Rose color
+        /* #012A36; - pretty dark blue
+         /* rgb(247, 173, 69); - sunny almost golden */
+    text-align: center;
+    color: #e7e1cd;
+    border-radius: 10px;
+    padding:80px 16px;
+}
+
+.menuBG {
+    background-color: rgb(25,25,25);
+}
+
+.menuText {
+    display: flex;
+    flex-direction: column;
+}
+.menuButton {
+    color: #e7e1cd;
+    cursor: pointer;
+    text-decoration: none;
+}
+.menuButton:hover {
+    color: #f58bec;
+    color: #91b786;
+}
+
+.menuText a {
+    padding-bottom: 15px;
+}
+.menuText .selectedMenuText {
+    color: #fff8e2;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.navButton {
+    color: white;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-right: 4px;
+    margin-top: 4px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+  cursor: pointer;
+}
+.navButton:hover {
+    color: black;
+    background-color: #e7e1cd;
+}
+
+.closeButton {
+color: white;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-right: 4px;
+    margin-top: 4px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+    position: fixed; /* Positions relative to the browser window */
+    top: 10px;       /* Distance from the top edge */
+    right: 1px;
+}
+.closeButton:hover {
+    color: black;
+    background-color: #e7e1cd;
+}
+
+.topRight {
+    position: fixed; /* Positions relative to the browser window */
+  top: 10px;       /* Distance from the top edge */
+  right: 20px;
+}
+
+.container {
+    width: 100%;
+    max-height: 900px;
+    background-color: rgb(25,25,25);
+    position: relative; /* Needed to absolutely position the circles inside */
+    overflow: hidden; /* Ensures circles don't spill outside the container */
+    z-index: -1;
+}
+
+.circle {
+    /* Base circle styles */
+    background-color: rgb(239, 180, 4);
+    /*#6a8462b8;/*#7f4f24;
+    /*#6a8462; /* Light green color */
+    /*#936639; - good tan
+    /* #7F4F24; - meh, brown
+    /*#582F0E; -brown too dark but might be good for a different background section
+    #3F4B3B; - dark green
+      /*#416165; - pretty teal
+        /* #012A36; - pretty dark blue
+         /* rgb(247, 173, 69); - sunny almost golden */
+         /*rgb(208, 167, 64) - yellow */
+    border-radius: 50%; /* Makes the div a circle */
+    position: absolute; /* Allows positioning anywhere inside the container */
+}
+
+/* Specific size variations */
+.large {
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 50px;
+}
+
+.medium {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 80px;
+}
+
+.small {
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    right: 20px;
+}
+
+.x-small {
+    width: 15px;
+    height: 15px;
+    bottom: 10px;
+    left: 200px;
+}
+
+/* Fonts, headlines, scripts */
+
+/* color: #B6AD90;
+background-color: #936639;*/
+
+header h1 {
+    font-size: 70px;
+    font-family: "Playfair Display", sans-serif;
+/*    text-shadow: 6px 8px rgba(0, 0, 0, 0.368);*/
+}
+
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.headlineTwo {
+    color:#e7e1cd;
+    font-family: "Dancing Script", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+}
+.headlineP {
+    color: #e7e1cd;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph {
+    background-color: #81A161;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    border: 2px solid #E6AA68;
+}
+
+/* Content, photos, padding and margin type classes */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    /* optional to lower items to center 
+    align-items: center;*/
+}
+
+.flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-content: center;
+    align-self: center;
+    /* optional to lower items to center 
+    align-items: center;*/
+}
+
+.event-type-photo-even {
+    width: 28vw;
+    max-width: 100vw;
+}
+.event-type-photo-odd {
+    width: 26vw;
+    max-width: 100vw;
+}
+
+.event-type-paragraph {
+    width: 55%;
+    text-align: center;
+    color: whitesmoke;
+    /*    margin-left: auto; ?? Why did I have this? */
+
+}
+.event-type-paragraph h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.event-type-paragraph p {
+    font-size: 13px;
+}
+
+.cream {
+    color: #0e0436;
+    background-color: #CBB9A4;
+    background-color: #f7e6bd;
+    background-color: #f6e4ba;
+}
+.cream p, .cream h2 {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.creamButton {
+    color: #f7ecdf;
+    background-color:#ca6533;
+    border: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.creamButton:hover {
+    background-color: #c96d3f;
+}
+
+.brick {
+    background-color: #D9A8A0;
+    background-color: #5f2121;
+    background-color: #304354;
+    background-color: #ceb4d8;
+    background-color: #cebbd5;
+    background-color: rgba(20,20,20);
+    color: #e5d7c6;
+    color: white;
+}
+.brick p, .brick h2 {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.brickButton {
+ background-color: #e5d7c6;
+ color: #3d3334;
+ border: none;
+ padding-left: 35px;
+ padding-right: 35px;
+ padding-top: 4px;
+ padding-bottom: 4px;
+ border-radius: 6px;
+ font-size: 12px;
+ cursor: pointer;
+}
+.brickButton:hover {
+    background-color: #f8e9d6;
+}
+
+.brick2 {
+    background-color: #81A161;
+    background-color: #304354;
+    color: #f4f2ea;
+}
+.brick2 p, .brick2 h2 {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.brick2Button {
+ background-color: #81A161;
+
+    background-color: #E6AA68;
+ color: white;
+ border: none;
+ padding-left: 35px;
+ padding-right: 35px;
+ padding-top: 4px;
+ padding-bottom: 4px;
+ border-radius: 6px;
+ font-size: 12px;
+ cursor: pointer;
+}
+.brick2Button:hover {
+    background-color: white;
+    color: #81A161;
+}
+
+
+.w3-row-padding img {margin-bottom: 12px}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/images/logo-coffee-oneal-dark.jpeg');
+  min-height: 100%;
+  background-color: black;
+}
+
+.visual1 {
+    background-color: rgba(20, 20, 20, 0.813); 
+    padding: 64px;
+    font-size: 28px;
+}
+
+/* Flexible Offerings Section */
+.bg-flexible {
+    background-image: url('/joe-woods-light-bg-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    Width: auto;
+    height: auto;
+}
+.overlay-bg {
+    background-image: linear-gradient(rgba(87, 33, 33, 0.507));
+    background-image: linear-gradient(rgba(126, 125, 125, 0.578));
+    background-image: linear-gradient(rgba(193, 192, 192, 0.578));
+    padding: 10px;
+}
+.flexible-overlay {
+    background-image: linear-gradient(rgba(245, 241, 231, 0.72));
+    background-image: linear-gradient(rgba(245, 241, 231, 0.419));
+    color: #1e1e1e;
+    padding: 22px;
+    margin: 22px;
+    border-radius: 22px;
+    box-shadow: 10px 10px 8px rgba(18, 18, 18, 0.509);
+    box-shadow: 10px 10px 8px rgba(89, 120, 121, 0.509);
+    border: 1px solid rgba(89, 120, 121, 0.509);
+    /*box-shadow: 10px 10px 8px rgba(45, 119, 122, 0.509);
+    box-shadow: 10px 10px 8px rgba(117, 1, 249, 0.509); Good color for neon party sign*/    
+    font-weight: 400;
+}
+.flexible-overlay h2 {
+    font-size: 22px;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+}
+.flexible-overlay p {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.tagline {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.flexible-button {
+    margin: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    cursor: pointer;
+    background-color: transparent;
+    /*background-image: linear-gradient(rgba(245, 241, 231, 0.359));*/
+    border-radius: 16px;
+    box-shadow: 4px 4px 2px rgba(18, 18, 18, 0.288);
+}
+
+.flexible-button:hover {
+    background-image: linear-gradient(rgba(245, 241, 231, 0.17));
+    box-shadow: 6px 6px 3px rgba(18, 18, 18, 0.288);
+
+}
+
+/* Footer and Form content */
+
+footer {
+    background-image: url('/joe-woods-light-bg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     /*#e6a968cf; /* #779e50dd;
+    /*#7F4F24;*/
+    /*#582F0E;*/
+    /*#936639;*/
+    /* #bbed06b3; */
+}
+footer p {
+    font-size: 14px;
+}
+
+.bubble-container {
+    width: 635px;
+    height: auto;
+    background-color: rgb(25,25,25); /*#1a2a4a; /* A dark blue for an 'underwater' feel */
+    position: relative;
+    margin-right: auto;
+    overflow: hidden; /* Hides bubbles that go outside the container */
+    padding:80px 16px;
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #b0e0e6); /* Creates a shiny effect */
+    background: radial-gradient(circle at 30% 30%, #f0f0ef, #bd970c);
+    border-radius: 50%; /* Makes the elements circular */
+    position: absolute;
+    bottom: -60px; /* Starts the bubbles just below the visible area */
+    opacity: 0.7;
+    animation: float 5s ease-in infinite; /* Applies the animation */
+}
+
+/* Position and size individual bubbles for variety */
+.bubble:nth-child(1) {
+    left: 10%;
+    animation-duration: 6s;
+    width: 40px;
+    height: 40px;
+}
+
+.bubble:nth-child(2) {
+    left: 40%;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(3) {
+    left: 70%;
+    animation-duration: 7s;
+    width: 60px;
+    height: 60px;
+}
+
+.bubble:nth-child(4) {
+    left: 90%;
+    animation-duration: 9s;
+    width: 30px;
+    height: 30px;
+}
+
+.bubble:nth-child(5) {
+    left: 20%;
+    animation-duration: 10s;
+    width: 20px;
+    height: 20px;
+}
+
+.bgimg-full {
+    display: hide;
+ }
+
+/* Flexible Menu Section */
+.bg-flexible-dark {
+    background-image: url('/nguyen-tong-hai-van-event-coffee-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    Width: auto;
+    height: auto;
+    border-radius: 16px;
+}
+.overlay-bg-dark {
+    background-image: linear-gradient(#6e3d0c48);
+    padding: 10px;
+        border-radius: 16px;
+
+}
+.flex-container{
+        display: flex; /* Activates Flexbox */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line when space runs out */
+    justify-content: space-between; /* Distributes space evenly between cards on each line */
+    /* Add desired width or max-width to the container */
+    /* max-width: 800px; */
+    margin: 0 auto; /* Center the container on the page */
+    gap: 20px; /* (Optional) A modern way to add consistent spacing between items */
+
+}
+.flexible-overlay-dark {
+    background-image: linear-gradient(rgba(245, 219, 168, 0.219));
+    background-image: linear-gradient(rgba(67, 44, 35, 0.219));
+    color: whitesmoke;
+    padding: 22px;
+    margin: 22px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 8px rgba(18, 18, 18, 0.509);
+    box-shadow: 10px 10px 8px rgba(118, 59, 42, 0.437);
+    box-shadow: 10px 10px 8px rgba(219, 158, 2, 0.437);
+    border: 1px solid rgba(249, 248, 241, 0.961);
+    /*box-shadow: 10px 10px 8px rgba(45, 119, 122, 0.509);
+    box-shadow: 10px 10px 8px rgba(117, 1, 249, 0.509); Good color for neon party sign*/    
+    font-weight: 400;
+    width: 41%;
+}
+.flexible-overlay-dark p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.flexible-overlay-dark h2 {
+    font-size: 22px;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+.flexible-overlay-dark h3 {
+    font-size: 18px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+    padding: 0;
+    text-align: left;
+}
+
+.flexible-button-dark {
+    margin: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(67, 44, 35, 0.301));
+    border-radius: 16px;
+    box-shadow: 4px 4px 2px rgba(18, 18, 18, 0.234);
+    font-size: 16px;
+}
+
+.flexible-button-dark:hover {
+    background-image: linear-gradient(rgba(67, 44, 35, 0.626));
+    color: rgb(255, 255, 255);
+    box-shadow: 6px 6px 3px rgba(18, 18, 18, 0.288);
+}
+
+.menuTag {
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 32px;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  color: #1e1e1e;
+  font-size: 12px;
+  padding: 2px;
+  text-align:left;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* The animation keyframes */
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-350px) translateX(20px); /* Moves bubbles up and slightly sideways */
+        opacity: 0; /* Makes them disappear as they reach the top */
+    }
+}
+
+.left-side {
+    width: 40%;
+}
+.right-side {
+    margin-left: 40%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Three equal columns that sit next to each other */
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.mobile-image {
+    display: none;
+}
+.mobile-welcome {
+    display: none;
+}
+.mobile-tagline {
+    display: none;
+}
+.bg-div {
+    display: none;
+}
+.bg-overlay {
+    display: none;
+}
+
+/* Media screen updates */
+
+@media only screen and (max-width: 800px) {
+
+.event-type-photo-even {
+    width: 100%;
+    height: auto;
+}
+.event-type-photo-odd {
+    width: 100%;
+    height: auto;
+}
+
+.event-type-paragraph {
+    width: 100%;
+}
+
+.flex {
+    flex-direction: column;
+}
+.flex-reverse {
+    flex-direction: column;
+}
+
+.bgimg {
+    display: none;
+}
+
+.event-type-photo {
+    width: 100%;
+    height: auto;
+}
+
+.event-type-paragraph {
+    width: 100%;
+    height: auto;
+}
+/*
+.mobile-image {
+    background-image: url('/images/logo-coffee-oneal-dark.jpeg');
+    display:block;
+    width: auto;
+    height: 100vh;
+    background-position: center;
+    background-size:contain;
+    background-repeat:no-repeat; 
+}*/
+.mobile-welcome h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    color: #e7e1cd;
+    padding-left: 10px;
+    font-size: 22px;
+    font-family: "Playfair Display", sans-serif;
+}
+.mobile-tagline-top {
+    display: flex;
+    justify-content: center;
+    justify-self:center;
+    align-items: flex-start;
+    color: #e7e1cd;
+    padding: 10px;
+    font-size: 22px;
+    font-family: "Playfair Display", sans-serif;
+    
+}
+.mobile-tagline-bottom {
+    display: flex;
+    justify-content: center;
+    justify-self:center;
+    align-items: flex-end;
+    color: #e7e1cd;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "Playfair Display", sans-serif;
+    height: 85vh;
+}
+
+header h1 {
+    font-size: 32px;
+} 
+header p {
+    font-size: 16px;
+}
+header {
+    margin: auto;
+}
+.bubble-container {
+    width: auto;
+    margin: auto;
+    padding: 25px;
+}
+
+.left-side {
+    display: none;
+}
+
+.bg-overlay {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-color: rgba(24, 21, 9, 0.701);
+    border: 4px solid rgba(247, 247, 182, 0.851);
+    box-shadow: 0px 10px 9px rgba(247, 247, 182, 0.851);
+
+}
+.bgimg-full {
+    display: block;
+    
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+  background-image: url('/images/logo-coffee-oneal-dark.jpeg');
+}
+.mobile-hide {
+    display: none;
+}
+
+.flexible-overlay-dark {
+    width: 40%;
+}
+
+
+}

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>O'Neal Street Coffee Co.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+CA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+
+<div class="bg-overlay">
+<div class="bgimg-full">
+ <!---- <h1>O'NEAL STREET<br>COFFEE</h1> -->
+  <p class="mobile-tagline-top">
+    NWA Mobile Coffee Bar
+  </p>
+  <p class="mobile-tagline-bottom">
+    Full Service • Specialty Minis • Canned Beverages • Event Packages
+  Scroll on to learn more.
+  </p>
+</div>
+</div>
+
+
+<nav class="w3-sidebar left-side" id="leftLogo">
+  <div class="bgimg">  
+    <p class="left-side-p">
+      NWA Mobile Coffee Bar for Events and Weddings
+    </p>
+</div>
+</nav>
+
+<div class="mobile-image"></div>
+<div class="mobile-welcome">
+  <h1>O'Neal Street Coffee</h1>
+</div>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar menuBG w3-animate-right w3-large" style="display:none;padding-top:150px;right:0;z-index:2;border-left:.5px solid rgb(208, 167, 64)" id="mySidebar"><!--rgb(105, 147, 79);-->
+  <div class="bubble-container" style="height: 75vh;">
+  <a href="javascript:void(0)" onclick="closeNav()" class="closeButton">
+    <i class="fa fa-remove"></i>
+  </a>
+  
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  
+  <div class="menuText">
+    <a href="#" class="menuButton selectedMenuText" onclick="closeNav()">Home</a>
+    <a href="#milestones" class="menuButton" onclick="closeNav()">Birthdays, Milestone Events, Holiday Parties</a>
+    <a href="#business" class="menuButton" onclick="closeNav()">Corporate Events, Retreats, Office Parties</a>
+    <a href="#office" class="menuButton" onclick="closeNav()">Teachers and Worker Appreciation Packages</a>
+    <a href="#weddings" class="menuButton" onclick="closeNav()">Weddings</a>
+  </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large right-side">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="navButton topRight" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container bubble-container" id="home">
+    <!--<div class="bubble-container">-->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    
+    <!--<div class="circle large"></div>
+    <div class="circle medium"></div>
+    <div class="circle small"></div>
+    <div class="circle x-small"></div>---->
+    <h1><b>Good vibes.<br>Great Drinks.<br>Unforgettable fun.</b></h1>
+    <p>
+Gather around beautifully crafted drinks, thoughtful service, and a coffee experience that comes to you.
+<br><br></p>
+    <p class="mobile-hide">
+    Full Service • Specialty Minis & Canned Beverages • Flexible Event Packages
+    <br>Scroll on to learn more. &downarrow;</p>
+    
+  </header>
+
+<div style="height: 50vh;background-image: url(/drinks_images/coffee-demi-deherrera-unsplash.jpg);width: 100%; background-size: cover; background-position: center;">
+  <div style="height: 50vh;width: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.731)); color: #efefef;">
+  <h2 style="font-size: 16px; padding: 25px;padding-bottom: 25px;">O’Neal Street Coffee is designed to meet you where you are.</h2>
+  
+  <p style="font-size: 16px; padding-left:45px; padding-right: 45px;">
+    From full service setups with custom menu offerings, to our new specialty minis and ready-to-enjoy drinks,
+ we offer flexible ways to create a memorable moment without the stress of complicated planning.
+<br><br> Welcome to O'Neal Street.
+</p>
+  </div>
+</div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+  <h2 class="headlineTwo">Drink and Event Gallery</h2>
+    <hr class="w3-opacity">
+
+  
+<!-- Photo Grid -->
+<div class="row" id="myGrid" style="margin-bottom:60px;">
+  <div class="column" style="padding-right:15px;padding-left:15px;">
+    <img src="/images/coffee-island.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/coldfoam-top-view-cinnamon.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/white-maple.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/family-photo.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/side-drink-setup.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/logos_images/IMG_9879.PNG" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/ube-coconut-jellyfish.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/christmas_tree_coffee_two.jpg" style="width:100%">
+
+</div>
+
+  <div class="column">
+    <img src="/images/lemonade-setup.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/ube-multiple.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/cozy-pour-two.PNG" style="width:100%;padding-bottom:15px;">
+    <img src="/logos_images/logo-green-paint-bg.JPEG" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/light_earthy.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/bg-coffee.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/rainy_coffee.jpg" style="width:100%;padding-bottom:15px;">
+  </div>
+
+  <div class="column" style="padding-right:15px;padding-left:15px;">
+    <img src="/drinks_images/clean-ube-coffee.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/drink-setup.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/valentine_plant_coffee.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/mixed-drink-menu.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/lemonade-setup.jpeg" style="width:100%;padding-bottom:15px;">
+    <img src="/images/grinch.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/closer_pumpkin_coffee.jpg" style="width:100%;padding-bottom:15px;">
+    <img src="/logos_images/logo-coffee.JPEG" style="width:100%;padding-bottom:15px;">
+    <img src="/drinks_images/lavender.JPG" style="width:100%;padding-bottom: 15px;">
+  </div>
+</div>
+
+<!-- End Photo Content -->
+
+</div>
+<!------------ MENU SAMPLE SECTION ------------>
+
+<div>
+  <div class="bg-flexible-dark">
+    <div class="overlay-bg-dark">
+  <h2 class="headlineTwo" style="padding-top: 35px;color:whitesmoke;">
+    Drinks Guests Talk About
+  </h2>
+            <p class="menuTag">
+    From signature favorites to playful seasonal creations, every menu is thoughtfully curated to feel personal, elevated, and just a little unexpected — with options for coffee lovers and non-coffee drinkers alike.
+  </p>
+  <p style="color: whitesmoke;font-style: italic;font-size: 15px;padding-right: 22px;padding-left:22px;">
+    A glimpse at some of the signature drinks that make our menus unforgettable.
+  </p>
+
+<div class="flex-container">
+    <div class="flexible-overlay-dark">
+      <h2>Sunrise Series</h2>
+      <h3>Cozy and Sweet</h3>
+      <button type="button" class="collapsible">Caramel Reverie</button>
+<div class="content">
+  <p class="flavor">
+    Caramel, hazelnut, and sweetened condensed milk are the ultimate dream team that make this one of our best selling flavors.
+  </p>
+</div>
+</div>
+
+<div class="flexible-overlay-dark">
+          <h2>Daydreamer Series</h2>
+          <h3>Unique and Dreamy</h3>
+      <button type="button" class="collapsible">Lavender Clouds</button>
+<div class="content">
+  <p class="flavor">
+
+  </p>
+</div>
+</div>
+
+<div class="flexible-overlay-dark">
+  <h2>
+    Moonlight Series
+  </h2>
+  <h3>
+    Bold and Crisp
+  </h3>
+        <button type="button" class="collapsible">Maple Twilight</button>
+  <div class="content">
+    <p>Lorem ipsum...</p>
+  </div>
+</div>
+
+<div class="flexible-overlay-dark">
+  <h2>
+    Eclipse Series
+  </h2>
+  <h3>
+    Vivid and Sweet
+  </h3>
+        <button type="button" class="collapsible">Ube Coconut Dream</button>
+  <div class="content">
+    <p>Lorem ipsum...</p>
+  </div>
+</div>
+</div>
+
+      <button class="flexible-button-dark">Explore Full Menu &#8594;</button>
+    <p class="menuTag" style="font-size:15px;">
+      We use thoughtfully sourced ingredients, housemade syrups whenever possible with exceptions for sugar-free syrups, and have other customizable options to fit some dietary needs.
+      <br><br> Menus are customized for each event.
+    </p>
+    </div>
+  </div>
+</div>
+
+<!------------ EVENT TYPE SECTION ------------>
+
+
+<!-------- WEDDINGS ------------>
+<div>
+<div style="height: 35vh;background-image: url(/cora-bates-wedding-coffee-rings-unsplash.jpg);width: 100%; background-size: cover; background-position: center;">
+  <div style="height:35vh;width: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.658)); color: #efefef;">
+  <h2 class="headlineTwo" style="font-size: 46px; padding: 45px;padding-bottom: 25px;">
+    Weddings and Receptions
+  </h2>
+  </div>
+</div>
+    
+    <div class="flex cream">
+    <div>
+        <img src="/wedding-venue.jpg" alt="" class="event-type-photo-even">
+    </div>
+    <div class="event-type-paragraph cream">
+        <h3>Brewed to Perfection</h3>
+        <p class="padding-bottom-30">
+
+From bridal brunch parties, coffee cocktail hours, and late-night pick-me-ups, we create a memorable coffee experience that feels like a natural part of your celebration — beautifully styled, thoughtfully served, and tailored to your vision.
+<br><br> Our beverage bar is designed to feel personal, warm, and unforgettable.
+
+</p>
+        <button class="creamButton">More Info</button>
+    </div>
+    </div>
+</div>
+
+<div>
+    <div class="flex-reverse brick">
+    <div>
+        <img src="/drinks_images/coldfoam-top-view-cinnamon.jpg" alt="" class="event-type-photo-odd"> <!--style="width:315px;"-->
+    </div>
+    <div class="event-type-paragraph brick" style="margin-right:auto;">
+      <h3>When you book with us, you get more than a beverage bar:</h3>
+      
+      <p>
+      You’re getting thoughtful service, beautifully crafted drinks, and a steady presence that keeps things flowing so guests feel relaxed and cared for. We handle the details behind the scenes, creating an experience that feels effortless, welcoming, and naturally woven into your celebration.
+    </p> <br>
+        <button class="brickButton">More Info</button>
+    </div>
+    </div>
+</div>
+
+<!-------- CORPORATE EVENTS SECTION ------------>
+
+<div>
+  <div style="height: 40vh;background-image: url(/nguyen-tong-hai-van-event-coffee-unsplash.jpg);width: 100%; background-size: cover; background-position: center;">
+  <div style="height: 40vh;width: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.658)); color: #efefef;">
+  <h2 class="headlineTwo" style="font-size: 46px; padding: 35px;padding-bottom: 25px;">
+    Corporate Events and Team Building
+  </h2>
+  </div>
+</div>
+
+    <div class="flex cream">
+    <div>
+        <img src="/images/white-maple-wide.jpeg" alt="" class="event-type-photo-even"> <!--style="width:310px;"-->
+    </div>
+    <div class="event-type-paragraph cream">
+        <h3 class="padding-bottom-30">
+                    Because the best workplace moments happen when people feel appreciated.
+        </h3>
+        <p>
+Our beverage service brings a polished, welcoming touch to meetings, celebrations, and client events with smooth logistics, flexible menus, and attentive service. 
+          <br><br>We take care of the flow so you can focus on your people and your priorities.
+        </p><br>
+        <button class="creamButton">More Info</button>
+    </div>
+    </div>
+</div>
+
+<div>
+    <div class="flex-reverse brick">
+    <div>
+        <img src="/drinks_images/lavender.JPG" alt="" class="event-type-photo-odd"> <!--style="width: 305px;"-->
+    </div>
+    <div class="event-type-paragraph brick" style="margin-right: auto; padding-bottom: 38px;">
+        <h3 class="padding-bottom-30">
+          A great way to elevate your next office gathering.
+        </h3>
+        <p class="padding-bottom-30">
+          You’re getting more than great drinks. You’re creating a welcoming atmosphere where people can recharge, connect, and feel valued.
+          <br><br>We bring dependable service, thoughtful details, and efficient flow so your event runs smoothly and leaves a lasting impression on your team and guests alike.
+        </p>
+        <button class="brickButton">More Info</button>
+    </div>
+    </div>
+</div>
+<div class="flex cream">
+    <div>
+        <img src="/images/white-maple-wide.jpeg" alt="" class="event-type-photo-even"> <!--style="width:310px;"-->
+    </div>
+    <div class="event-type-paragraph cream">
+        <h3 class="padding-bottom-30">
+          What to expect from us:
+        </h3>
+        <p>
+          <ul style="text-align: left; padding-left: 10%;padding-right:10%;font-size: 14px; list-style-position: outside;">
+  <li>Seamless setup and breakdown</li>
+  <li>Efficient service for high guest counts</li>
+  <li>Flexible menus including non-coffee options</li>
+  <li>Professional presentation that fits your environment</li>
+  <li>Easy planning from inquiry to event day</li>
+</ul>
+        </p><br>
+        <button class="creamButton">More Info</button>
+    </div>
+    </div>
+
+
+<!-------- APPRECIATION AND PARTIES EVENTS SECTION ------------>
+
+<div>
+  <div style="height: 40vh;background-image: url(/drinks_images/sprinkles.jpg);width: 100%; background-size: cover; background-position: center;">
+  <div style="height: 40vh;width: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.658)); color: #efefef;">
+  <h2 class="headlineTwo" style="font-size: 46px; padding: 35px;padding-bottom: 25px;">
+    Appreciation Packages
+    <br>and More
+  </h2>
+  </div>
+</div>
+    <div class="flex cream">
+    <div>
+        <img src="/images/drink-setup.jpeg" alt="" class="event-type-photo-even"> <!--style="width:310px;"-->
+    </div>
+    <div class="event-type-paragraph cream">
+        <h3 class="padding-bottom-30">Meaningful Moments Made Easy</h3>
+        <p class="padding-bottom-30">
+From teacher appreciations and staff celebrations to back-to-school nights and graduation gatherings, we bring our mobile beverage bar and attentive service to the moments that matter most.
+<br><br>
+If you’re treating faculty to a sweet treat or welcoming a full campus of families, our flexible setups are designed to keep lines moving and guests smiling — so you can focus on connection while we handle the details.        </p>
+        <button class="creamButton">More Info</button>
+    </div>
+    </div>
+</div>
+
+<div>
+    <div class="flex-reverse brick">
+    <div>
+        <img src="/drinks_images/lavender.JPG" alt="" class="event-type-photo-odd"> <!--style="width: 305px;"-->
+    </div>
+    <div class="event-type-paragraph brick" style="margin-right: auto; padding-bottom: 38px;">
+        <h3 class="padding-bottom-30">Celebrate, Appreciate, and Gather.</h3>
+        <p class="padding-bottom-30">
+          Seasonal parties and client appreciations to neighborhood gatherings and milestone celebrations, we create a welcoming drink experience that feels both elevated and effortless.
+Our team is equipped to serve crowds smoothly — from intimate groups to bustling events — with flexible options that adapt to your space, timeline, and vision.
+
+        <br><br>Whether you’re celebrating milestones or showing appreciation, we make it easy to create meaningful moments.
+        </p>
+          <button class="brickButton">More Info</button>
+    </div>
+    </div>
+    </div>
+
+    <!----------- Probably not needed -----------
+<div class="flex cream">
+    <div>
+        <img src="/images/white-maple-wide.jpeg" alt="" class="event-type-photo-even"> <!--style="width:310px;"-->
+<!----    </div>
+    <div class="event-type-paragraph cream">
+        <h3 class="padding-bottom-30">
+          Perfect for all sorts of different events:
+        </h3>
+        <p>
+          <ul style="text-align: left; padding-left: 10%;padding-right:10%;font-size: 14px; list-style-position: outside;">
+  <li>Teacher and Staff Appreciations</li>
+            <li>Community Events</li>
+            <li>Milestone Events</li>
+            <li>Graduation Ceremonies</li>
+            <li>Back to School</li>
+            <li>Conferences</li>
+            <li>Private Parties</li>
+</ul>
+        </p><br>
+        <button class="creamButton">More Info</button>
+    </div>
+    </div>
+------------------------>
+
+<!--------- Flexible Offerings Section --------->
+
+<div>
+  <div class="bg-flexible">
+    <div class="overlay-bg">
+          <div>
+  <h2 class="headlineTwo" style="padding-top: 35px; color:#1e1e1e;">
+    More ways to enjoy
+  </h2>
+  <p class="headlineP" style="color:#1e1e1e;">
+    Specialty minis • Canned Beverages • Drop-Off
+  </p>
+  </div>
+    <div class="flexible-overlay">
+      <h2>Specialty Minis</h2>
+      <p class="tagline">
+        Small Pours. Big Impressions.
+      </p>
+      <br>
+      <p>
+        Our Specialty Minis are 3oz handcrafted drinks designed to give guests a taste of something memorable.
+      <br><br> Perfect for grand openings, boutiques, appreciation events, and celebrations where you want people to gather, sample, and talk.
+
+      <br><br>  Guests can explore flavors, enjoy thoughtful presentation, and experience the same care we bring to full service — just in a smaller, playful format.
+      </p>
+      <button class="flexible-button">&#8594; Learn About Minis</button>
+    </div>
+    <div class="flexible-overlay">
+      <h2>Canned Beverages</h2>
+      <p class="tagline">
+        Coming Soon.
+      </p>
+      <br>
+      <p>
+        Our beautiful grab-and-go drinks offer a flexible way to serve guests and staff without the need for a full setup. 
+      <br><br>  From flavored cold brews to lemonades and specialty drinks, they’re perfect for stocking office fridges, events, schools, or self-serve stations.
+      <br><br>  Simple, quick, and easy to enjoy — wherever people gather.      </p>
+      <button class="flexible-button">&#8594; Explore Canned Options</button>
+    </div>
+    <div class="flexible-overlay">
+      <h2>Simple Drop Off</h2>
+      <p class="tagline">
+        Warm hospitality, simplified.
+      </p>
+      <br>
+      <p>
+        We prepare and deliver ready-to-serve beverage containers so you can offer great drinks without the logistics of full service. 
+      <br><br>Ideal for teacher appreciation, small gatherings, and budget-friendly events that still deserve something thoughtful.
+        Just pour and enjoy.
+      </p>
+      <button class="flexible-button">&#8594; See Drop-Off Details</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <div style="background-image: url(/andrew-knechel-coffee-lights-unsplash.jpg); background-position: center; width: auto; height: 100%; background-size: cover;">
+    <h2 class="headlineTwo visual1"> “Coffee, lemonade, and lasting impressions — always on O’Neal Street.”</h2>
+    </div>
+
+ <!----   <h2 class="headlineTwo">The Family Behind the Cart</h2>
+    <p class="paragraph">
+Hi, we’re the family behind O’Neal Street Coffee — born and raised right here in Northwest Arkansas.
+Our name comes from my mom’s side of the family. My grandma, known simply as Grandma O’Neal, was one of those people who left an impression on everyone she met — spirited, service-oriented, and always ready with a laugh. She taught us that serving others is one of the best ways to build community. Naming our business after her felt like the perfect way to honor that legacy while creating something new of our own.
+What began as a shared passion for crafting good drinks has turned into a family adventure. My husband and I bring the coffee know-how, and our daughter Lizzie is the official lemonade maker and taste-tester — though honestly, she might be the most creative of the three of us.
+For us, O’Neal Street isn’t just a name — it’s a feeling. It’s the kind of place where people gather, connect, and celebrate life’s moments both big and small. Whether we’re set up at a wedding, a work party, or right in your neighborhood, our goal is to make it easy for you to relax, enjoy, and share something special together.
+So, come share a drink, a smile, and a story. Meet us at O’Neal Street.
+    </p>
+-->
+    <div>
+    <div class="flex cream">
+    <div>
+        <img src="/images/family-photo.jpeg" alt="" class="event-type-photo-even"> <!--style="width:315px;"-->
+    </div>
+    <div class="event-type-paragraph cream" style="margin-right:auto;">
+        <!--<h3>Meet the Family Behind the Cart</h3> -->
+        <p class="padding-bottom-30" style="margin-top: 25%;">Hi, we’re the family behind O’Neal Street Coffee — born and raised right here in Northwest Arkansas.
+Our name comes from my mom’s side of the family. My grandma O’Neal, was one of those people who left an impression on everyone she met — spirited, service-oriented, and always ready with a laugh. She taught us that serving others is one of the best ways to build community.</p>
+    </div>
+    </div>
+</div>
+
+<div>
+    <div class="flex-reverse brick2">
+    <div>
+        <img src="/images/logo-oneal-coffee.jpeg" alt="" class="event-type-photo-odd"> <!--style="width:310px;"-->
+    </div>
+    <div class="event-type-paragraph brick2" style="margin-right:auto;">
+        <p class="padding-bottom-30" style="margin-top: 25%;">Naming our business after grandma O'Neal felt like the perfect way to honor that legacy while creating something new of our own. What began as a shared passion for crafting good drinks has turned into a family adventure. My husband and I bring the coffee know-how, and our daughter is the official lemonade maker and taste-tester — though honestly, she might be the most creative of the three of us.</p>
+    </div>
+    </div>
+</div>
+
+<div>
+    <div class="flex cream">
+    <div>
+        <img src="/images/lemonade-setup.jpeg" alt="" class="event-type-photo-even"> <!--style="width: 305px;"-->
+    </div>
+    <div class="event-type-paragraph cream" style="margin-right: auto;">
+        <p class="padding-bottom-30" style="margin-top: 25%;">For us, O’Neal Street isn’t just a name — it’s a feeling. It’s the kind of place where people gather, connect, and celebrate life’s moments both big and small. Whether we’re set up at a wedding, a work party, or right in your neighborhood, our goal is to make it easy for you to relax, enjoy, and share something special together.</p>
+    </div>
+    </div>
+</div>
+
+<div>
+    <div class="flex-reverse brick2">
+    <div>
+        <img src="/drinks_images/light_earthy.jpg" alt="" class="event-type-photo-odd"> <!--style="width: 305px;"-->
+    </div>
+    <div class="event-type-paragraph brick2" style="margin-right: auto; padding-bottom: 38px;">
+        <p class="padding-bottom-30" style="margin-top: 50%;">So come share a drink, a smile, and a story. Meet us at O’Neal Street.</p>
+        <button class="brick2Button">More Info</button>
+    </div>
+    </div>
+</div>
+    
+  <!-- End About Section -->
+  </div>
+ 
+  <!-- Contact Section 
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div>
+
+-->
+    
+    <!-- Image of location/map 
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+   
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  <!-- End Contact Section --
+  </div>  -->
+  
+    <hr class="w3-opacity">
+    <p class="paragraph">At O’Neal Street Coffee, we believe drinks bring people together. From smooth cold brew and refreshing lemonades to fun, caffeine-free creations for kids, our set up is designed to fit right into your celebration. Whether it’s a wedding, birthday, corporate party, or neighborhood gathering, we bring charm, quality, and whimsy to every event.
+    </p>
+    <hr class="w3-opacity">
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+          <img src="/logos_images/3C6B1B00-B9DD-4DEA-A52B-57867395FC9B.PNG" alt="" class="event-type-photo" style="width:250px;">
+    <p>Copyright 2026 All Rights Reserved</p>
+    <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
