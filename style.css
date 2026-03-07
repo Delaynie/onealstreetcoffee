@@ -773,7 +773,7 @@ footer p {
     justify-self:center;
     align-items: flex-end;
     color: #e7e1cd;
-    padding: 10px;
+    padding: 12px;
     font-size: 14px;
     font-family: "Playfair Display", sans-serif;
     height: 85vh;
@@ -797,7 +797,7 @@ header {
 .left-side {
     display: none;
 }
-
+/*
 .bg-overlay {
     display: flex;
     background-position: center;
@@ -806,19 +806,21 @@ header {
     width: 100%;
     
     height: 450px;
-    margin-bottom: 20px;/*
+    margin-bottom: 20px;
     background-color: rgba(24, 21, 9, 0.701);
     border: 4px solid rgba(247, 247, 182, 0.881);
-    box-shadow: 0px 10px 12px rgba(247, 247, 182, 0.851);*/
-}
+    box-shadow: 0px 10px 12px rgba(247, 247, 182, 0.851);
+}*/
+
 
 .bgimg-full {
    display: block;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 450px;
+    margin-bottom: 20px;
     background-color: rgb(22, 22, 22);
     background-image: url('/images/logo-coffee-oneal-dark.jpeg');
         border: 4px solid rgba(247, 247, 182, 0.881);
