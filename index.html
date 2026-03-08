@@ -429,15 +429,17 @@ Our team is equipped to serve crowds smoothly — from intimate groups to bustli
 <div>
   <div class="bg-flexible">
     <div class="overlay-bg">
-          <div>
+      <div>
   <h2 class="headlineTwo" style="padding-top: 35px; color:#1e1e1e;">
     More ways to enjoy
   </h2>
+
   <p class="headlineP" style="color:#1e1e1e;">
     Specialty minis • Canned Beverages • Drop-Off
   </p>
   </div>
     <div class="flexible-overlay">
+
       <h2>Specialty Minis</h2>
       <p class="tagline">
         Small Pours. Big Impressions.
@@ -445,10 +447,15 @@ Our team is equipped to serve crowds smoothly — from intimate groups to bustli
       <br>
       <p>
         Our Specialty Minis are 3oz handcrafted drinks designed to give guests a taste of something memorable.
-      <br><br> Perfect for grand openings, boutiques, appreciation events, and celebrations where you want people to gather, sample, and talk.
-
-      <br><br>  Guests can explore flavors, enjoy thoughtful presentation, and experience the same care we bring to full service — just in a smaller, playful format.
       </p>
+                <button type="button2" class="collapsible2">Click to see more &RightArrow;</button>
+<div class="content2">
+  <p>
+     Perfect for grand openings, boutiques, appreciation events, and celebrations where you want people to gather, sample, and talk.
+     <br><br>  Guests can explore flavors, enjoy thoughtful presentation, and experience the same care we bring to full service — just in a smaller, playful format.
+  </p>
+</div>
+      
       <button class="flexible-button">&#8594; Learn About Minis</button>
     </div>
     <div class="flexible-overlay">
@@ -617,6 +624,21 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll2 = document.getElementsByClassName("collapsible2");
+var i2;
+
+for (i = 0; i < coll2.length; i2++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";

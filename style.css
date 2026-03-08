@@ -620,6 +620,10 @@ footer p {
   background-color: #ccc;
 }
 
+.active2, .collapsible2:hover {
+  background-color: blue;
+}
+
 /* Style the collapsible content. Note: hidden by default */
 .content {
   display: none;
@@ -630,6 +634,15 @@ footer p {
   padding: 2px;
   text-align:left;
 }
+.content2 {
+  display: none;
+  overflow: hidden;
+  background-color: inherit;
+  color: #1e1e1e;
+  font-size: 14px;
+  padding: 4px;
+  text-align:left;
+}
 
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -638,8 +651,18 @@ footer p {
   float: right;
   margin-left: 5px;
 }
+.collapsible2:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
 
 .active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active2:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
