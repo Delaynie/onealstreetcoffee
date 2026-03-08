@@ -643,6 +643,10 @@ footer p {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+.bgimg-full {
+    display: none;
+}
+
 /* The animation keyframes */
 @keyframes float {
     0% {
