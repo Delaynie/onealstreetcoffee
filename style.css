@@ -385,12 +385,20 @@ h3 {
     background-image: linear-gradient(rgba(193, 192, 192, 0.578));
     padding: 10px;
 }
+
+.flexxy {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
 .flexible-overlay {
     background-image: linear-gradient(rgba(245, 241, 231, 0.72));
     background-image: linear-gradient(rgba(245, 241, 231, 0.419));
     color: #1e1e1e;
-    padding: 22px;
-    margin: 22px;
+    padding: 12px 6px;
+    margin: 18px 12px;
     border-radius: 22px;
     box-shadow: 10px 10px 8px rgba(18, 18, 18, 0.509);
     box-shadow: 10px 10px 8px rgba(89, 120, 121, 0.509);
@@ -398,6 +406,7 @@ h3 {
     /*box-shadow: 10px 10px 8px rgba(45, 119, 122, 0.509);
     box-shadow: 10px 10px 8px rgba(117, 1, 249, 0.509); Good color for neon party sign*/    
     font-weight: 400;
+    width: 80%;
 }
 .flexible-overlay h2 {
     font-size: 22px;
@@ -406,20 +415,21 @@ h3 {
     font-weight: bold;
 }
 .flexible-overlay p {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 18px;
+    padding-left: 18px;
+    font-size: 14px;
 }
 .tagline {
     font-family: "Playfair Display", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 .flexible-button {
-    margin: 12px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    margin: 12px 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     color: #1e1e1e;
     border: 1px solid #1e1e1e;
     cursor: pointer;
@@ -427,6 +437,7 @@ h3 {
     /*background-image: linear-gradient(rgba(245, 241, 231, 0.359));*/
     border-radius: 16px;
     box-shadow: 4px 4px 2px rgba(18, 18, 18, 0.288);
+    font-size: 14px;
 }
 
 .flexible-button:hover {
@@ -616,16 +627,14 @@ footer p {
   margin: 2px 0;
 }
 .collapsible2 {
-  background-color: #eee;
+  background-color: inherit;
   color: #444;
   cursor: pointer;
   padding: 12px;
-  border-radius: 6px;
-  width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
   margin: 2px 0;
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -634,7 +643,7 @@ footer p {
 }
 
 .active2, .collapsible2:hover {
-  background-color: blue;
+  text-decoration: underline;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -654,7 +663,7 @@ footer p {
   color: #1e1e1e;
   font-size: 14px;
   padding: 4px;
-  text-align:left;
+  text-align:center;
 }
 
 .collapsible:after {
@@ -667,8 +676,6 @@ footer p {
 .collapsible2:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     color: white;
-    float: right;
-    margin-left: 5px;
 }
 
 .active:after {
