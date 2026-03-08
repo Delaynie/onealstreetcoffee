@@ -448,8 +448,8 @@ Our team is equipped to serve crowds smoothly — from intimate groups to bustli
       <p>
         Our Specialty Minis are 3oz handcrafted drinks designed to give guests a taste of something memorable.
       </p>
-                <button type="button2" class="collapsible2">Click to see more &RightArrow;</button>
-<div class="content2">
+                <button type="button" class="collapsible2">Click to see more &RightArrow;</button>
+<div class="contents">
   <p>
      Perfect for grand openings, boutiques, appreciation events, and celebrations where you want people to gather, sample, and talk.
      <br><br>  Guests can explore flavors, enjoy thoughtful presentation, and experience the same care we bring to full service — just in a smaller, playful format.
@@ -633,17 +633,17 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-var coll2 = document.getElementsByClassName("collapsible2");
-var i2;
+var collap = document.getElementsByClassName("collapsible2");
+var a;
 
-for (i = 0; i < coll2.length; i2++) {
-  coll[i].addEventListener("click", function() {
+for (a = 0; a < collap.length; a++) {
+  collap[a].addEventListener("click", function() {
     this.classList.toggle("active2");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    var contents = this.nextElementSibling;
+    if (contents.style.display === "block") {
+      contents.style.display = "none";
     } else {
-      content.style.display = "block";
+      contents.style.display = "block";
     }
   });
 }
