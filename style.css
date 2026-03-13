@@ -10,6 +10,31 @@ body {
     background-color: rgb(25,25,25);
 }
 
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling to the anchor */
+}
+
+.to-top-button {
+  /* Basic styling for the link/button */
+  position: fixed; /* Keeps the button in a fixed spot on the screen */
+  bottom: 20px;
+  right: 20px;
+  background-color: #628364;
+  color: white;
+  padding: 2px 16px;
+  width: 5%;
+  height: auto;
+  text-decoration: none;
+  display: inline-block;
+  z-index: 99;
+  border-radius: 12px;
+  font-size: 32px;
+}
+
+.to-top-button:hover {
+  background-color: #719473;
+}
+
 .padding-bottom-30 {
     padding-bottom: 30px;
 }
@@ -743,6 +768,8 @@ footer p {
 .bg-overlay {
     display: none;
 }
+
+
 
 /* Media screen updates */
 
